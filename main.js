@@ -1,5 +1,5 @@
 "use strict";
-//~~~~>~~~~~>~~~~Object , Array and function~~~~~~>~~~~~~>~~~~~~~~~~~~
+//~~~~>~~~~~>~~~~Object, Array and function~~~~~~>~~~~~~>~~~~~~~~~~~~
 Object.defineProperty(exports, "__esModule", { value: true });
 //Task No 1~~~~~~~~~~Assignment 1: Building Your Friend List~~~~~~~~~~~~~
 /*Task: Create a program that manages a simple friend list.
@@ -108,7 +108,7 @@ let product5 = {
 //inventory.products.push(product4, product5);
 let updateInventory = inventory.products.push(product4, product5);
 console.log(updateInventory);
-console.log("Name of the fifth product", inventory.products[3].name);
+console.log("Name of the fifth product", inventory.products[4].name);
 console.log("cost of the first product", inventory.products[0].cost);
 let Student = {
     students: []
@@ -139,15 +139,17 @@ let students = [
         seniorStudent: true,
         completedAssignment: true
     }
- ];
- console.log(students);
- function SeniorStudentsAssignments(students): {
+];
+console.log(students);
+function SeniorStudentsWithAssignments(students) {
     return students.filter(student => student.seniorStudent && student.completedAssignment);
- };
- let seniorStudentAssignments = SeniorStudentsAssignments(students);
- console.log(seniorStudentAssignments);
- function updateClassList(students) {
+}
+;
+let seniorStudentAssignments = SeniorStudentsWithAssignments(students);
+console.log(seniorStudentAssignments);
+function updateClassList(students) {
     return students.filter(student => !student.seniorStudent || student.completedAssignment);
- };
- let updateList = updateClassList(students);
- console.log(updateList);
+}
+;
+let updateList = updateClassList(students);
+console.log(updateList);

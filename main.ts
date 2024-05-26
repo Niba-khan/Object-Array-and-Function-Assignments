@@ -133,7 +133,7 @@
  }
 
  let product5:product = {
-   name: "Toyota car",
+   name: "Corolla car",
    model: "2024",
    cost: 400000,
    quantity: 20
@@ -143,7 +143,7 @@
  let updateInventory = inventory.products.push(product4, product5);
  console.log(updateInventory);
 
- console.log("Name of the fifth product", inventory.products[3].name);
+ console.log("Name of the fifth product", inventory.products[4].name);
  console.log("cost of the first product", inventory.products[0].cost);
 
 
